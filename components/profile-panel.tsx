@@ -85,7 +85,7 @@ export default function ProfilePanel({
                 </div>
                 <div className="bg-secondary p-2 rounded-lg border border-border">
                   <p className="text-[10px] text-muted-foreground">סטטוס</p>
-                  <p className="font-bold" style={{ color: "hsl(var(--success))" }}>
+                    <p className="font-bold text-success">
                     פעיל
                   </p>
                 </div>
@@ -113,8 +113,8 @@ export default function ProfilePanel({
                       <span
                         className="text-[10px] px-2.5 py-1 rounded-full font-bold flex items-center gap-1"
                         style={{
-                          backgroundColor: "hsl(var(--success) / 0.1)",
-                          color: "hsl(var(--success))",
+                          backgroundColor: "color-mix(in srgb, var(--color-success) 10%, transparent)",
+                          color: "var(--color-success)",
                         }}
                       >
                         <CheckCircle size={10} />

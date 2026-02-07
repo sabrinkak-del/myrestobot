@@ -392,7 +392,7 @@ export default function RestoBotPage() {
               className={`flex items-end gap-2 bg-secondary rounded-2xl p-2 border transition-all ${
                 isLoading
                   ? "opacity-50"
-                  : "focus-within:ring-2 ring-ring/30 border-primary/30"
+                  : "focus-within:ring-2 ring-ring ring-opacity-30 border-primary/30"
               }`}
             >
               {bookingStep === "date" ? (
