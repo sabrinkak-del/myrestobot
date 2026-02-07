@@ -2,7 +2,10 @@ import type { Metadata, Viewport } from "next"
 import { Assistant } from "next/font/google"
 import "./globals.css"
 
-const assistant = Assistant({ subsets: ["latin", "hebrew"] })
+const assistant = Assistant({
+  subsets: ["latin", "hebrew"],
+  variable: "--font-assistant",
+})
 
 export const metadata: Metadata = {
   title: "RESTOBOT - בוט הזמנת מקומות",
@@ -25,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="he" dir="rtl">
-      <body className={assistant.className}>{children}</body>
+      <body className={`${assistant.variable} font-sans antialiased`}>{children}</body>
     </html>
   )
 }
